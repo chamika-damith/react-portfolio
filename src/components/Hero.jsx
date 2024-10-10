@@ -24,7 +24,8 @@ function Hero() {
                         <p className='my-2 max-w-2xl py-6 text-xl leading-relaxed tracking-tight'>
                             {HERO_CONTENT}
                         </p>
-                        <a href='/resume.pdf' target='_blank' rel='noopener noreferrer' download className='bg-white rounded-full p-4 text-sm text-stone-800 mb-10'>
+                        <a href='/resume.pdf' target='_blank' rel='noopener noreferrer' download className='bg-white 
+                        rounded-full p-4 text-sm text-stone-800 mb-10 font-bold'>
                             Download Resume
                         </a>
                     </div>
