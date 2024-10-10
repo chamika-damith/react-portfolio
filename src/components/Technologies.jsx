@@ -1,4 +1,4 @@
-import { FaNode } from "react-icons/fa"
+import { FaJava, FaNode } from "react-icons/fa"
 import { RiReactjsLine } from "react-icons/ri"
 import { SiMongodb, SiMysql } from "react-icons/si"
 import { TbBrandNextjs } from "react-icons/tb"
@@ -22,6 +22,9 @@ function Technologies() {
                 </div>
                 <div>
                     <FaNode className="text-7xl text-green-500" />
+                </div>
+                <div>
+                    <FaJava  className="text-7xl text-orange-400" />
                 </div>
             </div>
         </div>
