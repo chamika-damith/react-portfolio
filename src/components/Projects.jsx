@@ -6,7 +6,7 @@ function Projects() {
             <h2 className="my-20 text-center text-4xl">
                 Projects
             </h2>
-            <div>
+            <div className="ml-8">
                 {PROJECTS.map((Projects, index) => (
                     <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
                         <div className="w-full lg:w-1/4">

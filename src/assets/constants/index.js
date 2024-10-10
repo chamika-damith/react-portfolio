@@ -1,11 +1,11 @@
-import project1 from "../projects/project-1.webp";
-import project2 from "../projects/project-2.webp";
-import project3 from "../projects/project-3.webp";
-import project4 from "../projects/project-4.webp";
-import project5 from "../projects/project-4.webp";
-import project6 from "../projects/project-4.webp";
-import project7 from "../projects/project-4.webp";
-import project8 from "../projects/project-4.webp";
+import project1 from "../projects/chat-application.webp";
+import project2 from "../projects/connect4game.webp";
+import project3 from "../projects/studiomanagement.webp";
+import project4 from "../projects/library-management-systrm.webp";
+import project5 from "../projects/bootstrap-web-pos.webp";
+import project6 from "../projects/portfolio.webp";
+import project7 from "../projects/react-pos.webp";
+import project8 from "../projects/linkedin-clone.webp";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Java, Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
