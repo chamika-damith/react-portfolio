@@ -2,6 +2,10 @@ import project1 from "../projects/project-1.webp";
 import project2 from "../projects/project-2.webp";
 import project3 from "../projects/project-3.webp";
 import project4 from "../projects/project-4.webp";
+import project5 from "../projects/project-4.webp";
+import project6 from "../projects/project-4.webp";
+import project7 from "../projects/project-4.webp";
+import project8 from "../projects/project-4.webp";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Java, Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -40,32 +44,52 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Chat Application",
     image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    description: "A fully functional chat application using Java socket programming for real-time communication between clients.",
+    technologies: ["Java", "Socket Programming", "Multithreading"],
   },
   {
-    title: "Task Management App",
+    title: "Connect 4 Game",
     image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "React", "Firebase"],
+    description: "A Connect 4 game implemented in Java with an AI opponent using the Minimax algorithm for decision-making.",
+    technologies: ["Java", "Minimax Algorithm", "AI"],
   },
   {
-    title: "Portfolio Website",
+    title: "Studio Management System (POS)",
     image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
+    description: "A Studio Management System designed as a Point of Sale (POS) application, allowing management of services, client bookings, and sales transactions.",
+    technologies: ["Java", "JavaFX", "CSS", "MySQL"],
   },
   {
-    title: "Blogging Platform",
+    title: "Library Management System",
     image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    description: "A Library Management System for managing books, members, and transactions, implemented with Java, JavaFX, and Hibernate for database interaction.",
+    technologies: ["Java", "JavaFX", "CSS", "MySQL", "Hibernate"],
+  },
+  {
+    title: "ThogaKade POS Website",
+    image: project5,
+    description: "A web-based Point of Sale (POS) system for managing sales, inventory, and customer transactions at ThogaKade, implemented using HTML, CSS, and Bootstrap.",
+    technologies: ["HTML", "CSS", "Bootstrap"],
+  },
+  {
+    title: "Portfolio",
+    image: project6,
+    description: "A personal portfolio website showcasing projects, skills, and experiences, built with React and styled using Tailwind CSS for a modern look.",
+    technologies: ["React", "Tailwind CSS", "Framer Motion"],
+  },
+  {
+    title: "React POS System",
+    image: project7,
+    description: "A web-based Point of Sale (POS) system built with React, providing features for managing sales, inventory, and customer transactions with a user-friendly interface.",
+    technologies: ["React", "Tailwind CSS",],
+  },
+  {
+    title: "LinkedIn Clone",
+    image: project8,
+    description: "A social media platform clone inspired by LinkedIn, built with React. It features user profiles, connections, and a news feed to share updates.",
+    technologies: ["React", "CSS", "Firebase"],
   },
 ];
 
