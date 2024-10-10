@@ -15,7 +15,7 @@ export default function App() {
         bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div></div>
       </div>
 
-      <div className="container mx-auto px-32">
+      <div className="container mx-auto lg:px-32">
         <Navbar />
         <Hero />
         <Technologies />
