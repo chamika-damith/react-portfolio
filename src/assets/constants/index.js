@@ -6,6 +6,9 @@ import project5 from "../projects/bootstrap-web-pos.webp";
 import project6 from "../projects/portfolio.webp";
 import project7 from "../projects/react-pos.webp";
 import project8 from "../projects/linkedin-clone.webp";
+import blog1 from "../blog/blog-1.jpg"
+import blog2 from "../blog/blog-2.jpg"
+import blog3 from "../blog/blog-3.jpg"
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Java, Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -106,3 +109,27 @@ export const CONTACT = {
   phoneNo: "+94 78 576 5111 ",
   email: "chamikadamith9@gmail.com",
 };
+
+export const BLOGPOST = [
+  {
+    title: "The Future of Web Development",
+    excerpt: "Exploring upcoming trends and technologies shaping the web development landscape.",
+    date: "June 15, 2023",
+    image: blog1,
+    slug: "future-of-web-development",
+  },
+  {
+    title: "Mastering React Hooks",
+    excerpt: "A deep dive into React Hooks and how they can simplify your component logic.",
+    date: "May 22, 2023",
+    image: blog2,
+    slug: "mastering-react-hooks",
+  },
+  {
+    title: "The Art of Responsive Design",
+    excerpt: "Techniques and best practices for creating truly responsive web experiences.",
+    date: "April 10, 2023",
+    image: blog3,
+    slug: "art-of-responsive-design",
+  },
+];

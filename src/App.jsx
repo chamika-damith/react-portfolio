@@ -1,3 +1,5 @@
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -20,6 +22,8 @@ export default function App() {
         <Hero />
         <Technologies />
         <Projects />
+        <Blog />
+        <Contact />
       </div>
     </div>
   );
