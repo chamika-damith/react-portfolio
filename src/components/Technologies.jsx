@@ -1,134 +1,74 @@
-import { motion, useAnimation } from 'framer-motion';
-import { FaJava, FaNode } from "react-icons/fa";
-import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb, SiMysql } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
+import { Code2, Database, Globe, Cpu, Brain, Cloud } from 'lucide-react';
+import { TechnologyCard } from './TechnologyCard';
 
-const iconVariants = (delay) => ({
-    initial: { y: -10 },
-    animate: {
-        y: 10,
-        transition: {
-            delay: delay,
-            duration: 2,
-            ease: "linear",
-            repeat: Infinity,
-            repeatType: "reverse",
-        },
+export default function Technologies() {
+  const technologies = [
+    {
+      icon: Code2,
+      name: "Frontend Development",
+      description: "Building responsive and interactive user interfaces with modern frameworks",
+      delay: 0.1
     },
-    hover: { scale: 1.3, transition: { duration: 0.3 } },
-});
+    {
+      icon: Database,
+      name: "Backend Systems",
+      description: "Designing scalable server architectures and APIs",
+      delay: 0.2
+    },
+    {
+      icon: Globe,
+      name: "Web Technologies",
+      description: "Creating seamless web experiences with cutting-edge tools",
+      delay: 0.3
+    },
+    {
+      icon: Cpu,
+      name: "System Architecture",
+      description: "Developing robust and efficient system architectures",
+      delay: 0.4
+    },
+    {
+      icon: Brain,
+      name: "AI Integration",
+      description: "Implementing intelligent solutions with machine learning",
+      delay: 0.5
+    },
+    {
+      icon: Cloud,
+      name: "Cloud Computing",
+      description: "Leveraging cloud platforms for scalable applications",
+      delay: 0.6
+    }
+  ];
 
-function Technologies() {
-    const controls = useAnimation(); 
-    const [ref, inView] = useInView({ threshold: 0.7 }); 
-
-    useEffect(() => {
-        if (inView) {
-            controls.start("visible"); 
-        } else {
-            controls.start("hidden"); 
-        }
-    }, [controls, inView]);
-
-    return (
+  return (
+    <section className="py-20">
+      <div className="container mx-auto px-4">
         <motion.div
-            className="pb-24"
-            initial="hidden"
-            animate="visible"
-            variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                    opacity: 1,
-                    transition: { staggerChildren: 0.2 },
-                },
-            }}
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
         >
-            <motion.h2
-                ref={ref} 
-                className="my-20 text-center text-4xl"
-                initial={{ opacity: 0, y: -50 }}
-                animate={controls} 
-                variants={{
-                    hidden: { opacity: 0, y: -50 },
-                    visible: { opacity: 1, y: 0 },
-                }}
-                transition={{ duration: 1 }}
-            >
-                Technologies
-            </motion.h2>
-
-            <motion.div className="flex flex-wrap items-center justify-center gap-16">
-                {/* React */} 
-                <motion.div
-                    title="React"
-                    variants={iconVariants(0)}
-                    initial="initial"
-                    animate="animate"
-                    whileHover="hover"
-                >
-                    <RiReactjsLine className="text-7xl text-cyan-400" />
-                </motion.div>
-
-                {/* Next.js */} 
-                <motion.div
-                    title="Nextjs"
-                    variants={iconVariants(0.8)} 
-                    initial="initial"
-                    animate="animate"
-                    whileHover="hover"
-                >
-                    <TbBrandNextjs className="text-7xl" />
-                </motion.div>
-
-                {/* MongoDB */}
-                <motion.div
-                    title="Mongodb"
-                    variants={iconVariants(0.6)}  
-                    initial="initial"
-                    animate="animate"
-                    whileHover="hover"
-                >
-                    <SiMongodb className="text-7xl text-green-800" />
-                </motion.div>
-
-                {/* MySQL */}
-                <motion.div
-                    title="Mysql"
-                    variants={iconVariants(1)}
-                    initial="initial"
-                    animate="animate"
-                    whileHover="hover"
-                >
-                    <SiMysql className="text-7xl text-blue-500" />
-                </motion.div>
-
-                {/* Node.js */}
-                <motion.div
-                    title="Nodejs"
-                    variants={iconVariants(0.2)} 
-                    initial="initial"
-                    animate="animate"
-                    whileHover="hover"
-                >
-                    <FaNode className="text-7xl text-green-500" />
-                </motion.div>
-
-                {/* Java */}
-                <motion.div
-                    title="Java"
-                    variants={iconVariants(0.5)} 
-                    initial="initial"
-                    animate="animate"
-                    whileHover="hover"
-                >
-                    <FaJava className="text-7xl text-orange-400" />
-                </motion.div>
-            </motion.div>
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-4">
+            Technologies
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Leveraging cutting-edge technologies to build innovative solutions
+          </p>
         </motion.div>
-    );
-}
 
-export default Technologies;
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {technologies.map((tech) => (
+            <TechnologyCard 
+              key={tech.name} 
+              {...tech}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
