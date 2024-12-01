@@ -1,45 +1,70 @@
-import { SiGmail } from 'react-icons/si';
-import logo from '../assets/mylogonew.webp';
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
+
+const navVariants = {
+  hidden: { y: -50, opacity: 0 },
+  visible: { 
+    y: 0, 
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut"
+    }
+  }
+};
+
+const iconVariants = {
+  hover: { 
+    scale: 1.2,
+    rotate: 5,
+    transition: { duration: 0.2 }
+  }
+};
+
 function Navbar() {
   return (
-    <nav className=" flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center">
-        <a href="/" aria-label="Home">
-          <img src={logo} alt='logo' className='' width={60} height={50} />
-        </a>
+    <motion.nav 
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md"
+      initial="hidden"
+      animate="visible"
+      variants={navVariants}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          <motion.div 
+            className="flex-shrink-0"
+            whileHover={{ scale: 1.05 }}
+          >
+            <a href="/" className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+              CD
+            </a>
+          </motion.div>
+
+          <div className="flex items-center space-x-6">
+            {[
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/chamika-damith/', label: 'LinkedIn' },
+              { icon: Github, href: 'https://github.com/chamika-damith', label: 'GitHub' },
+              { icon: Instagram, href: 'https://www.instagram.com/chamika.damith71/', label: 'Instagram' },
+              { icon: Mail, href: 'mailto:chamikadamith9@gmail.com', label: 'Email' }
+            ].map((item) => (
+              <motion.a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors"
+                variants={iconVariants}
+                whileHover="hover"
+              >
+                <item.icon className="w-6 h-6" />
+              </motion.a>
+            ))}
+          </div>
+        </div>
       </div>
-      <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-        <a href='https://www.linkedin.com/in/chamika-damith/'
-          target='_blank'
-          rel='noopener noreferrer'
-          aria-label='LinkedIn'>
-          <FaLinkedin />
-        </a>
-
-        <a href='https://github.com/chamika-damith'
-          target='_blank'
-          rel='noopener noreferrer'
-          aria-label='Github'>
-          <FaGithub />
-        </a>
-
-        <a href='https://www.instagram.com/chamika.damith71/'
-          target='_blank'
-          rel='noopener noreferrer'
-          aria-label='Instagram'>
-          <FaInstagram />
-        </a>
-
-        <a href='chamikadamith9@gmail.com'
-          target='_blank'
-          rel='noopener noreferrer'
-          aria-label='Gmail'>
-          <SiGmail />
-        </a>
-      </div>
-    </nav>
-  )
+    </motion.nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
