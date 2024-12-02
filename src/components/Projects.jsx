@@ -1,53 +1,74 @@
-import { PROJECTS } from "../assets/constants"
 import React, { useState } from 'react';
+import { PROJECTS } from '../assets/constants';
+import { ProjectCard } from './ProjectCard';
+import { ProjectFilter } from './ProjectFilter';
 
-function Projects() {
-    const [selectedCategory, setSelectedCategory] = useState('All');
+const ALL_CATEGORIES = ['All', 'UI design', 'Applications', 'Web development'];
+const INITIAL_DISPLAY_COUNT = 6; 
 
-    const handleFilter = (category) => {
-        setSelectedCategory(category);
-    };
+export default function Projects() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [visibleProjectsCount, setVisibleProjectsCount] = useState(INITIAL_DISPLAY_COUNT);
 
-    const filteredProjects = selectedCategory === 'All' 
-        ? PROJECTS 
-        : PROJECTS.filter(project => project.category === selectedCategory);
+  const filteredProjects = selectedCategory === 'All'
+    ? PROJECTS
+    : PROJECTS.filter(project => project.category === selectedCategory);
 
-    return (
-        <div className="pb-4">
-            <h2 className="my-20 text-center text-4xl">
-                Projects
-            </h2>
-            <div className="flex justify-center gap-3 mb-20 mt-10  text-sm md:gap-10 md:text-lg lg:gap-14">
-                <button className={`text-center hover:text-orange-600 ${selectedCategory === 'All' ? 'text-orange-600' : ''}`} onClick={() => handleFilter('All')}>All</button>
-                <button className={`text-center hover:text-orange-600 ${selectedCategory === 'UI design' ? 'text-orange-600' : ''}`} onClick={() => handleFilter('UI design')}>UI design</button>
-                <button className={`text-center hover:text-orange-600 ${selectedCategory === 'Applications' ? 'text-orange-600' : ''}`} onClick={() => handleFilter('Applications')}>Applications</button>
-                <button className={`text-center hover:text-orange-600 ${selectedCategory === 'Web development' ? 'text-orange-600' : ''}`} onClick={() => handleFilter('Web development')}>Web development</button>
-            </div>
+  const displayedProjects = filteredProjects.slice(0, visibleProjectsCount);
 
-            <div className="ml-8">
-                {filteredProjects.map((project, index) => (
-                    <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                        <div className="w-full lg:w-1/4">
-                            <img src={project.image}
-                                width={250}
-                                height={250}
-                                alt={project.title}
-                                className="mb-6 rounded" />
-                        </div>
-                        <div className="w-full max-w-xl lg:w-3/4">
-                            <h3 className="mb2 font-semibold text-2xl">{project.title}</h3>
-                            <p className="mb-4 text-stone-400">{project.description}</p>
-                            {project.technologies.map((tech, index) => (
-                                <span className="mr-2 rounded bg-stone-900 p-2" key={index}>
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-            </div>
+  const handleViewMore = () => {
+    setVisibleProjectsCount(prevCount => prevCount + 6);
+  };
+
+  return (
+    <section className="relative py-20">
+      <div className="absolute inset-0 " />
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl">
+            Featured Projects
+          </h2>
+          <p className="mt-4 text-lg text-slate-400">
+            Explore our latest work and innovations
+          </p>
         </div>
-    )
-}
 
-export default Projects
+        <div className="mt-12 ">
+          <ProjectFilter
+            categories={ALL_CATEGORIES}
+            selectedCategory={selectedCategory}
+            onSelectCategory={(category) => {
+              setSelectedCategory(category);
+              setVisibleProjectsCount(INITIAL_DISPLAY_COUNT);
+            }}
+          />
+        </div>
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {displayedProjects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              technologies={project.technologies}
+              link={project.link}
+            />
+          ))}
+        </div>
+
+        {visibleProjectsCount < filteredProjects.length && (
+          <div className="mt-10 flex justify-center">
+            <button
+              onClick={handleViewMore}
+              className="rounded-full bg-gradient-to-r from-blue-600 to-violet-600  hover:bg-slate-800 px-6 py-3 text-white transition  "
+            >
+              View More
+            </button>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}

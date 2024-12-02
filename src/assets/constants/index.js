@@ -1,11 +1,3 @@
-import project1 from "../projects/chat-application.webp";
-import project2 from "../projects/connect4game.webp";
-import project3 from "../projects/studiomanagement.webp";
-import project4 from "../projects/library-management-systrm.webp";
-import project5 from "../projects/bootstrap-web-pos.webp";
-import project6 from "../projects/portfolio.webp";
-import project7 from "../projects/react-pos.webp";
-import project8 from "../projects/linkedin-clone.webp";
 import blog1 from "../blog/blog-1.jpg"
 import blog2 from "../blog/blog-2.jpg"
 import blog3 from "../blog/blog-3.jpg"
@@ -47,60 +39,60 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Chat Application",
-    image: project1,
-    description: "A fully functional chat application using Java socket programming for real-time communication between clients.",
-    technologies: ["Java", "Socket Programming", "Multithreading"],
-    category:"Applications",
+    title: "AI Image Generator",
+    description: "A modern AI-powered image generation platform using stable diffusion models",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
+    technologies: ["React", "TypeScript", "TailwindCSS", "Gemini API"],
+    category: "Applications",
+    link: "https://example.com/ai-image-generator"
   },
   {
-    title: "Connect 4 Game",
-    image: project2,
-    description: "A Connect 4 game implemented in Java with an AI opponent using the Minimax algorithm for decision-making.",
-    technologies: ["Java", "Minimax Algorithm", "AI"],
-    category:"Applications",
+    title: "E-Commerce Website",
+    description: "Responsive Dashboard and products view",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    technologies: ["Figma"],
+    category: "UI design",
+    link: "https://www.figma.com/design/ryKAvzllH0zapEshbfBvgY/Untitled?node-id=0-1&t=QkR519N4v1CxCnLO-1"
   },
   {
-    title: "Studio Management System (POS)",
-    image: project3,
-    description: "A Studio Management System designed as a Point of Sale (POS) application, allowing management of services, client bookings, and sales transactions.",
-    technologies: ["Java", "JavaFX", "CSS", "MySQL"],
-    category:"Applications",
-  },
-  {
-    title: "Library Management System",
-    image: project4,
-    description: "A Library Management System for managing books, members, and transactions, implemented with Java, JavaFX, and Hibernate for database interaction.",
-    technologies: ["Java", "JavaFX", "CSS", "MySQL", "Hibernate"],
-    category:"Applications",
-  },
-  {
-    title: "ThogaKade POS Website",
-    image: project5,
-    description: "A web-based Point of Sale (POS) system for managing sales, inventory, and customer transactions at ThogaKade, implemented using HTML, CSS, and Bootstrap.",
-    technologies: ["HTML", "CSS", "Bootstrap"],
-    category:"Web development",
+    title: "E-Commerce Platform",
+    description: "Full-featured online store with cart, checkout, and payment integration",
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800",
+    technologies: ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
+    category: "Web development",
+    link: "https://example.com/ecommerce"
   },
   {
     title: "Portfolio",
-    image: project6,
-    description: "A personal portfolio website showcasing projects, skills, and experiences, built with React and styled using Tailwind CSS for a modern look.",
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    category:"Web development",
+    description: "Modern and minimalist portfolio design for creative professionals",
+    image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&q=80&w=800",
+    technologies: ["React", "Framer Motion", "TailwindCSS"],
+    category: "UI design",
+    link: "www.chamikadamith.me",
   },
   {
-    title: "React POS System",
-    image: project7,
-    description: "A web-based Point of Sale (POS) system built with React, providing features for managing sales, inventory, and customer transactions with a user-friendly interface.",
-    technologies: ["React", "Tailwind CSS"],
-    category:"Web development",
+    title: "Linkedin Clone",
+    description: "Linkedin Clone Implementation Main Features in Linkedin",
+    image: "https://images.unsplash.com/photo-1704382002666-5dc4fbb522c0?q=80&w=2009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    technologies: ["React","Firebase"],
+    category: "Applications",
+    link: "https://github.com/chamika-damith/Linkedin-Clone-ReactJs.git",
   },
   {
-    title: "LinkedIn Clone",
-    image: project8,
-    description: "A social media platform clone inspired by LinkedIn, built with React. It features user profiles, connections, and a news feed to share updates.",
-    technologies: ["React", "CSS", "Firebase"],
-    category:"Web development",
+    title: "Proposed crop monitoring system Backend",
+    description: "Real-time monitoring crop and manage fields,staff,vehicle,equipment",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    technologies: ["Java", "Spring boot", "Mysql", "JWT"],
+    category: "Applications",
+    link: "https://github.com/chamika-damith/Proposed-crop-monitoring-system-backend.git"
+  },
+  {
+    title: "Proposed crop monitoring system Frontend",
+    description: "Real-time monitoring crop and manage fields,staff,vehicle,equipment",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    technologies: ["HTML", "Javascript", "TailwindCSS"],
+    category: "Web development",
+    link: "https://github.com/chamika-damith/Proposed-crop-monitoring-system-frontend.git"
   },
 ];
 
