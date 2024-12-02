@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
-import profilePic from '../assets/profilePicnew.jpg';
+import profilePic from '../assets/profilePicnew.webp';
 import { HERO_CONTENT } from '../assets/constants';
 
 
@@ -86,6 +86,7 @@ function Hero() {
               <img
                 src={profilePic}
                 alt="Profile"
+                loading="lazy"
                 className="relative rounded-3xl w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
             </motion.div>
