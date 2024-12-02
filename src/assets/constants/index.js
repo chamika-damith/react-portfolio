@@ -1,6 +1,6 @@
-import blog1 from "../blog/blog-1.jpg"
-import blog2 from "../blog/blog-2.jpg"
-import blog3 from "../blog/blog-3.jpg"
+import blog1 from "../blog/blog-1.webp"
+import blog2 from "../blog/blog-2.webp"
+import blog3 from "../blog/blog-3.webp"
 import { Code2, Database, Globe, Cpu, Brain, Cloud } from 'lucide-react';
 
 
