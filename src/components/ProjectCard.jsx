@@ -1,9 +1,8 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
-
   
 
-export function ProjectCard({ title, description, image, technologies, link }) {
+export function ProjectCard({ title, description, image, technologies = [], link }) {
   return (
     <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 p-1 transition-all hover:scale-[1.01]">
       <div className="relative h-full flex flex-col space-y-4 rounded-xl bg-slate-950/50 p-6 backdrop-blur-sm">

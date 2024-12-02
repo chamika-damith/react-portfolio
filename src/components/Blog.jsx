@@ -1,42 +1,45 @@
-import { BLOGPOST } from "../assets/constants"
+import React from 'react';
+import { BlogCard } from './BlogCard';
+import { BLOGPOST } from '../assets/constants';
+
 export default function Blog() {
-    return (
-        <article className="p-8 mb-20 " data-page="blog">
-            <header>
-                <h2 className="my-20 text-center text-4xl">
-                    Blog
-                </h2>
-            </header>
-            <section className="blog-posts">
-                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    {BLOGPOST.map((post, index) => (
-                        <li
-                            className="overflow-hidden bg-zinc-900 rounded-lg shadow-md transition-transform transform hover:scale-105"
-                            key={index}
-                        >
-                            <a href="/" className="block h-full">
-                                <figure className="blog-banner-box">
-                                    <img
-                                        src={post.image}
-                                        alt={post.title}
-                                        loading="lazy"
-                                        className="w-full h-48 object-cover rounded-t-lg"
-                                        width={600}
-                                        height={400}
-                                    />
-                                </figure>
-                                <div className="p-5 flex flex-col justify-between h-full">
-                                    <div className=" mb-3 text-sm">
-                                        <time dateTime={post.date} className="text-gray-400">{post.date}</time>
-                                        <p className="text-lg text-white mt-2">{post.title}</p>
-                                        <p className="text-gray-300 mb-4 mt-2">{post.excerpt}</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </section>
-        </article>
-    )
+  return (
+    <article className="relative py-20 px-4 sm:px-6 lg:px-8" data-page="blog">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto">
+        <header className="text-center mb-16">
+          <div className="flex items-center justify-center gap-3 mb-2">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-4">
+              Latest Articles
+            </h2>
+          </div>
+          
+          <p className=" text-zinc-400 max-w-2xl mx-auto">
+            Explore the future of technology through my curated insights and discoveries
+          </p>
+        </header>
+
+        <section className="blog-posts">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {BLOGPOST.map((post, index) => (
+              <BlogCard key={index} post={post} />
+            ))}
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <a
+              href='https://medium.com/@chamikadamith9'
+              className="rounded-full bg-gradient-to-r from-blue-600 to-violet-600  hover:bg-slate-800 px-6 py-3 text-white transition  "
+            >
+              View All
+            </a>
+          </div>
+        </section>
+      </div>
+    </article>
+  );
 }

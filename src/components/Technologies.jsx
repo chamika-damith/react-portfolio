@@ -1,47 +1,9 @@
 import { motion } from 'framer-motion';
-import { Code2, Database, Globe, Cpu, Brain, Cloud } from 'lucide-react';
 import { TechnologyCard } from './TechnologyCard';
+import { technologies } from '../assets/constants';
 
 export default function Technologies() {
-  const technologies = [
-    {
-      icon: Code2,
-      name: "Frontend Development",
-      description: "Building responsive and interactive user interfaces with modern frameworks",
-      delay: 0.1
-    },
-    {
-      icon: Database,
-      name: "Backend Systems",
-      description: "Designing scalable server architectures and APIs",
-      delay: 0.2
-    },
-    {
-      icon: Globe,
-      name: "Web Technologies",
-      description: "Creating seamless web experiences with cutting-edge tools",
-      delay: 0.3
-    },
-    {
-      icon: Cpu,
-      name: "System Architecture",
-      description: "Developing robust and efficient system architectures",
-      delay: 0.4
-    },
-    {
-      icon: Brain,
-      name: "AI Integration",
-      description: "Implementing intelligent solutions with machine learning",
-      delay: 0.5
-    },
-    {
-      icon: Cloud,
-      name: "Cloud Computing",
-      description: "Leveraging cloud platforms for scalable applications",
-      delay: 0.6
-    }
-  ];
-
+  
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">

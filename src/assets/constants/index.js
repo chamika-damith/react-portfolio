@@ -1,6 +1,8 @@
 import blog1 from "../blog/blog-1.jpg"
 import blog2 from "../blog/blog-2.jpg"
 import blog3 from "../blog/blog-3.jpg"
+import { Code2, Database, Globe, Cpu, Brain, Cloud } from 'lucide-react';
+
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Java, Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -67,7 +69,7 @@ export const PROJECTS = [
     description: "Modern and minimalist portfolio design for creative professionals",
     image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&q=80&w=800",
     technologies: ["React", "Framer Motion", "TailwindCSS"],
-    category: "UI design",
+    category: "Web development",
     link: "www.chamikadamith.me",
   },
   {
@@ -105,23 +107,65 @@ export const CONTACT = {
 export const BLOGPOST = [
   {
     title: "The Future of Web Development",
-    excerpt: "Exploring upcoming trends and technologies shaping the web development landscape.",
-    date: "June 15, 2023",
+    excerpt: "Revolutionizing Web Development: A Deep Dive into Bolt.New AI",
+    date: "Nov 30, 2024",
     image: blog1,
     slug: "future-of-web-development",
+    link: "https://medium.com/@chamikadamith9/revolutionizing-web-development-a-deep-dive-into-bolt-new-ai-7bc8b4607488",
   },
   {
-    title: "Mastering React Hooks",
-    excerpt: "A deep dive into React Hooks and how they can simplify your component logic.",
-    date: "May 22, 2023",
+    title: "Mastering Java & Spring",
+    excerpt: "Java Bean vs POJO vs Spring Bean | Are you confused too ? Understanding the Differences",
+    date: "Oct 26, 2024",
     image: blog2,
-    slug: "mastering-react-hooks",
+    slug: "Mastering-Java-&-Spring",
+    link: "https://medium.com/@chamikadamith9/java-bean-vs-pojo-vs-spring-bean-are-you-confused-too-understanding-the-differences-6ad89241a8dc",
   },
   {
-    title: "The Art of Responsive Design",
-    excerpt: "Techniques and best practices for creating truly responsive web experiences.",
-    date: "April 10, 2023",
+    title: "Java & Spring boot RESTful API",
+    excerpt: "Understanding RESTful APIs in Java: A Beginner’s Guide to REST Principles and Building Your First API",
+    date: "Oct 26, 2024",
     image: blog3,
-    slug: "art-of-responsive-design",
+    slug: "Java-&-Spring-boot-RESTful-API",
+    link: "https://medium.com/@chamikadamith9/understanding-restful-apis-in-java-a-beginners-guide-to-rest-principles-and-building-your-first-f424b8610c0d",
   },
+];
+
+export const technologies = [
+  {
+    icon: Code2,
+    name: "Frontend Development",
+    description: "Building responsive and interactive user interfaces with modern frameworks",
+    delay: 0.1
+  },
+  {
+    icon: Database,
+    name: "Backend Systems",
+    description: "Designing scalable server architectures and APIs",
+    delay: 0.2
+  },
+  {
+    icon: Globe,
+    name: "Web Technologies",
+    description: "Creating seamless web experiences with cutting-edge tools",
+    delay: 0.3
+  },
+  {
+    icon: Cpu,
+    name: "System Architecture",
+    description: "Developing robust and efficient system architectures",
+    delay: 0.4
+  },
+  {
+    icon: Brain,
+    name: "AI Integration",
+    description: "Implementing intelligent solutions with machine learning",
+    delay: 0.5
+  },
+  {
+    icon: Cloud,
+    name: "Cloud Computing",
+    description: "Leveraging cloud platforms for scalable applications",
+    delay: 0.6
+  }
 ];

@@ -26,11 +26,11 @@ export default function Projects() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-4">
             Featured Projects
           </h2>
-          <p className="mt-4 text-lg text-slate-400">
-            Explore our latest work and innovations
+          <p className="mt-4  text-slate-400 max-w-2xl mx-auto">
+            Explore my latest work and innovations
           </p>
         </div>
 
