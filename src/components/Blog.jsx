@@ -33,6 +33,7 @@ export default function Blog() {
           <div className="mt-10 flex justify-center">
             <a
               href='https://medium.com/@chamikadamith9'
+              target='blank'
               className="rounded-full bg-gradient-to-r from-blue-600 to-violet-600  hover:bg-slate-800 px-6 py-3 text-white transition  "
             >
               View All
