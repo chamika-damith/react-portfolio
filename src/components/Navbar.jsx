@@ -25,7 +25,7 @@ const iconVariants = {
 function Navbar() {
   return (
     <motion.nav 
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md  shadow-sm"
       initial="hidden"
       animate="visible"
       variants={navVariants}
@@ -36,7 +36,7 @@ function Navbar() {
             className="flex-shrink-0"
             whileHover={{ scale: 1.05 }}
           >
-            <a href="/" className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+            <a href="/" className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-red-600 bg-clip-text text-transparent">
               CD
             </a>
           </motion.div>
@@ -53,7 +53,7 @@ function Navbar() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 transition-colors"
+                className="text-gray-200 hover:text-red-400 transition-colors dark:text-gray-100 dark:hover:text-red-500"
                 variants={iconVariants}
                 whileHover="hover"
               >

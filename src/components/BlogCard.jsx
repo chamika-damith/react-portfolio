@@ -1,11 +1,15 @@
 import React from 'react';
 import { CalendarDays, ArrowUpRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export function BlogCard({ post }) {
   return (
-    <div className="group relative bg-gradient-to-br from-zinc-900/90 to-zinc-800/90 rounded-2xl overflow-hidden backdrop-blur-sm border border-zinc-800/50 hover:border-zinc-700/50 transition-all duration-500">
+    <motion.div initial={{ scale: 0.8 }}
+    whileInView={{ scale: 1 }}
+    transition={{ duration: 0.8, ease: "easeIn" }}
+     className="group relative bg-gradient-to-br from-zinc-900/90 to-zinc-800/90 rounded-2xl overflow-hidden backdrop-blur-sm border border-zinc-800/50 hover:border-zinc-700/50 transition-all duration-500">
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-br  from-red-700 via-gray-800 to-pink-950 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       {/* Image Section */}
       <div className="relative h-64 overflow-hidden">
@@ -24,7 +28,7 @@ export function BlogCard({ post }) {
           <time className="text-sm">{post.date}</time>
         </div>
 
-        <h3 className="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 mb-3">
+        <h3 className="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r  from-red-500 via-gray-400 to-pink-800 mb-3">
           {post.title}
         </h3>
 
@@ -36,7 +40,7 @@ export function BlogCard({ post }) {
             href={post.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-blue-400 group-hover:text-blue-300 transition-colors"
+            className="flex items-center gap-2 text-red-400 group-hover:text-red-300 transition-colors"
           >
             <span className="text-sm font-medium">Read More</span>
             <ArrowUpRight
@@ -46,6 +50,6 @@ export function BlogCard({ post }) {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

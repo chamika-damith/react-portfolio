@@ -1,6 +1,8 @@
-import React from 'react';
-import { BlogCard } from './BlogCard';
-import { BLOGPOST } from '../assets/constants';
+import React from "react";
+import { BlogCard } from "./BlogCard";
+import { BLOGPOST } from "../assets/constants";
+import { motion } from "framer-motion";
+
 
 export default function Blog() {
   return (
@@ -13,14 +15,23 @@ export default function Blog() {
       <div className="relative max-w-7xl mx-auto">
         <header className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-2">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-4">
+            <motion.h2
+              initial={{ scale: 0.8 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r  from-pink-200 to-red-500 mb-4 mb-4"
+            >
               Latest Articles
-            </h2>
+            </motion.h2>
           </div>
-          
-          <p className=" text-zinc-400 max-w-2xl mx-auto">
-            Explore the future of technology through my curated insights and discoveries
-          </p>
+
+          <motion.p initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className=" text-zinc-400 max-w-2xl mx-auto">
+            Explore the future of technology through my curated insights and
+            discoveries
+          </motion.p>
         </header>
 
         <section className="blog-posts">
@@ -32,9 +43,9 @@ export default function Blog() {
 
           <div className="mt-10 flex justify-center">
             <a
-              href='https://medium.com/@chamikadamith9'
-              target='blank'
-              className="rounded-full bg-gradient-to-r from-blue-600 to-violet-600  hover:bg-slate-800 px-6 py-3 text-white transition  "
+              href="https://medium.com/@chamikadamith9"
+              target="blank"
+              className="rounded-full bg-gradient-to-r  from-red-700 via-gray-600 to-pink-900  hover:bg-slate-800 px-6 py-3 text-white transition  "
             >
               View All
             </a>

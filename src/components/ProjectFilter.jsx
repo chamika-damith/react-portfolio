@@ -13,7 +13,7 @@ export function ProjectFilter({ categories, selectedCategory, onSelectCategory }
             xl:text-base
             ${
               selectedCategory === category
-                ? 'bg-gradient-to-r from-blue-600 to-violet-600 text-white'
+                ? 'bg-gradient-to-r from-red-600 via-gray-800 to-pink-900 text-white'
                 : 'bg-slate-800/50 text-slate-300 hover:bg-slate-800'
             }
           `}
