@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Blog() {
   return (
-    <article className="relative py-20 px-4 sm:px-6 lg:px-8" data-page="blog">
+    <article className="relative py-20 px-4 sm:px-6 lg:px-8" data-page="blog" id="blog">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000" />

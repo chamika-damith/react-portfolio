@@ -51,7 +51,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="relative min-h-screen p-2 flex items-center justify-center overflow-hidden">
+    <div id="contacts" className="relative min-h-screen p-2 flex items-center justify-center overflow-hidden">
       <div className="relative w-full max-w-6xl grid lg:grid-cols-2 gap-8">
         <div className="space-y-8 p-8">
           <div className="relative">

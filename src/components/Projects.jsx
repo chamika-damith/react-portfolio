@@ -25,7 +25,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="relative py-20">
+    <section id="projects" className="relative py-20">
       <div className="absolute inset-0 " />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
