@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 import { RiCloseFill, RiMenu3Line } from "react-icons/ri";
+import { Link } from 'react-scroll';
+
 
 const navVariants = {
   hidden: { y: -50, opacity: 0 },
@@ -58,21 +60,28 @@ function Navbar() {
 
           <div className="hidden md:flex space-x-10 ml-14">
             {[
-              { label: "Home", href: "#home" },
-              { label: "Technologies", href: "#technologies" },
-              { label: "Projects", href: "#projects" },
-              { label: "Blog", href: "#blog" },
-              { label: "Contact", href: "#contacts" },
+              { label: "Home", to: "home" },
+              { label: "Technologies", to: "technologies" },
+              { label: "Projects", to: "projects" },
+              { label: "Blog", to: "blog" },
+              { label: "Contact", to: "contacts" },
             ].map((link) => (
-              <motion.a
+              <motion.div
                 key={link.label}
-                href={link.href}
-                className="text-gray-400 hover:text-red-400 transition-colors dark:text-gray-100 dark:hover:text-red-500 font-light"
+                className="text-gray-400 hover:text-red-400 transition-colors dark:text-gray-100 dark:hover:text-red-500 font-light hover:cursor-pointer"
                 variants={linkVariants}
                 whileHover="hover"
               >
-                {link.label}
-              </motion.a>
+                <Link
+                  to={link.to}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  offset={-70}
+                >
+                  {link.label}
+                </Link>
+              </motion.div>
             ))}
           </div>
 
