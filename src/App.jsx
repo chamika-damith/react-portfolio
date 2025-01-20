@@ -1,9 +1,8 @@
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Technologies from "./components/Technologies";
+import AllBlogs from "./components/AllBlogs";
+
 
 export default function App() {
   return (
@@ -19,11 +18,11 @@ export default function App() {
 
       <div className="container mx-auto lg:px-32">
         <Navbar />
-        <Hero />
-        <Technologies />
-        <Projects />
-        <Blog />
-        <Contact />
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs" element={<AllBlogs />} />
+        </Routes>
       </div>
     </div>
   );

@@ -76,7 +76,7 @@ export const PROJECTS = [
     title: "Linkedin Clone",
     description: "Linkedin Clone Implementation Main Features in Linkedin",
     image: "https://images.unsplash.com/photo-1704382002666-5dc4fbb522c0?q=80&w=2009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    technologies: ["React","Firebase"],
+    technologies: ["React", "Firebase"],
     category: "Applications",
     link: "https://github.com/chamika-damith/Linkedin-Clone-ReactJs.git",
   },
