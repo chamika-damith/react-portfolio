@@ -68,6 +68,7 @@ export default function Projects() {
               image={project.image}
               technologies={project.technologies}
               link={project.link}
+              exteranllink={project.exteranllink}
             />
           ))}
         </div>

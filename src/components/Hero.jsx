@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 import profilePic from '../assets/profilePicnew.webp';
 import { HERO_CONTENT } from '../assets/constants';
+import resume from '../assets/resume.pdf';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -72,8 +73,8 @@ function Hero() {
 
             <motion.div variants={itemVariants}>
               <motion.a
-                href="/resume.pdf"
-                download
+                href={resume}
+                download="chamika-damith-resume.pdf"
                 className="inline-flex items-center px-6 py-3 rounded-full bg-red-600 hover:bg-red-700 text-white font-medium transition-colors duration-300 group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

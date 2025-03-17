@@ -41,12 +41,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "AI Image Generator",
-    description: "A modern AI-powered image generation platform using stable diffusion models",
+    title: "Doctor Booking System",
+    description: "his is a real-world MERN stack application for booking and managing doctor appointments. Users\n" +
+        " can find doctors, check availability, and schedule appointments easily.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
-    technologies: ["React", "TypeScript", "TailwindCSS", "Gemini API"],
+    technologies: ["React", "Javascript", "TailwindCSS", "NodeJs", "MongoDB", "Redux", "JWT"],
     category: "Applications",
-    link: "https://example.com/ai-image-generator"
+    link: "https://github.com/chamika-damith/Doctor-Appointment-Booking-Frontend.git",
+    exteranllink: "https://doctor-appointment-booking-frontend-seven.vercel.app/"
   },
   {
     title: "E-Commerce Website",
@@ -81,12 +83,14 @@ export const PROJECTS = [
     link: "https://github.com/chamika-damith/Linkedin-Clone-ReactJs.git",
   },
   {
-    title: "Proposed crop monitoring system Backend",
-    description: "Real-time monitoring crop and manage fields,staff,vehicle,equipment",
+    title: " Seafarers Clinic System",
+    description: "This application is for managing seafarers' clinic appointments, patients, and medical reports.\n" +
+        " Admin can schedule appointments, track patient records, and generate medical reports efficiently.",
     image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     technologies: ["Java", "Spring boot", "Mysql", "JWT"],
     category: "Applications",
-    link: "https://github.com/chamika-damith/Proposed-crop-monitoring-system-backend.git"
+    link: "https://github.com/chamika-damith/SeafarersClinicSystem.git",
+    exteranllink: "https://seafarers-clinic-system.vercel.app/"
   },
   {
     title: "Proposed crop monitoring system Frontend",
