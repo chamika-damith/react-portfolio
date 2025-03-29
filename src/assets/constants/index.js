@@ -62,9 +62,10 @@ export const PROJECTS = [
     title: "E-Commerce Platform",
     description: "Full-featured online store with cart, checkout, and payment integration",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800",
-    technologies: ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
+    technologies: ["Reactjs", "Stripe", "Typescript", "Firebase"],
     category: "Web development",
-    link: "https://example.com/ecommerce"
+    link: "https://github.com/chamika-damith/earpod-web.git",
+    exteranllink: "https://earpod-web.vercel.app/"
   },
   {
     title: "Portfolio",
@@ -75,19 +76,20 @@ export const PROJECTS = [
     link: "www.chamikadamith.me",
   },
   {
-    title: "Linkedin Clone",
-    description: "Linkedin Clone Implementation Main Features in Linkedin",
-    image: "https://images.unsplash.com/photo-1704382002666-5dc4fbb522c0?q=80&w=2009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    technologies: ["React", "Firebase"],
+    title: "Slon Booking Website",
+    description: "A user-friendly salon booking website for easy appointment scheduling, real-time availability, and automated confirmations, enhancing convenience for customers and efficient management for salon owners.",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    technologies: ["React", "Typescript", "TailwindCSS", "NodeJs", "MongoDB", "Redux", "JWT"],
     category: "Applications",
-    link: "https://github.com/chamika-damith/Linkedin-Clone-ReactJs.git",
+    link: "https://github.com/chamika-damith/salon-booking-client-website",
+    exteranllink: "https://salon-booking-client-website.vercel.app/"
   },
   {
     title: " Seafarers Clinic System",
     description: "This application is for managing seafarers' clinic appointments, patients, and medical reports.\n" +
         " Admin can schedule appointments, track patient records, and generate medical reports efficiently.",
     image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    technologies: ["Java", "Spring boot", "Mysql", "JWT"],
+    technologies: ["React", "Typescript", "TailwindCSS", "Java", "Mysql", "Redux", "JWT"],
     category: "Applications",
     link: "https://github.com/chamika-damith/SeafarersClinicSystem.git",
     exteranllink: "https://seafarers-clinic-system.vercel.app/"
@@ -99,6 +101,24 @@ export const PROJECTS = [
     technologies: ["HTML", "Javascript", "TailwindCSS"],
     category: "Web development",
     link: "https://github.com/chamika-damith/Proposed-crop-monitoring-system-frontend.git"
+  },
+  {
+    title: "saas product landing page",
+    description: "A SaaS product landing page is a focused and visually engaging webpage designed to showcase the features, benefits, and value proposition of a software-as-a-service offering. It includes key elements",
+    image: "https://images.unsplash.com/photo-1532522750741-628fde798c73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    technologies: [ "ReactJs" , "Tailwind CSS", "Framer motion"],
+    category: "Web development",
+    link: "https://github.com/chamika-damith/saas-product-landing-page",
+    exteranllink: "https://saas-product-landing-page-indol.vercel.app/"
+  },
+  {
+    title: "POS System",
+    description: "A Point of Sale system for retail environments managing product data, inventory, sales, and customer information.",
+    image: "https://images.unsplash.com/photo-1742836531226-a5c750d5a1fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    technologies: ["ReactJs", "Javascript", "TailwindCSS", "Java", "Mysql", "Hibernate", "JWT"],
+    category: "Applications",
+    link: "https://github.com/chamika-damith/react-pos-system",
+    exteranllink: "https://react-pos-system-phi.vercel.app/pos"
   },
 ];
 
