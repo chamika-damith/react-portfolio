@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './Hero'
+import Marquee from './Marquee'
 import Technologies from './Technologies'
 import Projects from './Projects'
 import Blog from './Blog'
@@ -9,6 +10,7 @@ const Home = () => {
   return (
     <div>
         <Hero />
+        <Marquee />
         <Technologies />
         <Projects />
         <Blog />

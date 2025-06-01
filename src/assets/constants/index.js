@@ -120,6 +120,15 @@ export const PROJECTS = [
     link: "https://github.com/chamika-damith/react-pos-system",
     exteranllink: "https://react-pos-system-phi.vercel.app/pos"
   },
+  {
+    title: "Modern E-Commerce Marketplace",
+    description: "A comprehensive e-commerce platform with advanced features including product filtering, cart management, and secure checkout process",
+    image: "https://images.unsplash.com/photo-1607082348824-0a3d8b4c07b1?auto=format&fit=crop&q=80&w=800",
+    technologies: ["React", "Redux", "GraphQL", "Stripe", "Typescript", "TailwindCSS"],
+    category: "Web development",
+    link: "https://github.com/chamika-damith/modern-ecommerce-marketplace",
+    exteranllink: "https://modern-ecommerce-marketplace.vercel.app/"
+  },
 ];
 
 export const CONTACT = {
@@ -147,7 +156,7 @@ export const BLOGPOST = [
   },
   {
     title: "Java & Spring boot RESTful API",
-    excerpt: "Understanding RESTful APIs in Java: A Beginner’s Guide to REST Principles and Building Your First API",
+    excerpt: "Understanding RESTful APIs in Java: A Beginner's Guide to REST Principles and Building Your First API",
     date: "Oct 26, 2024",
     image: blog3,
     slug: "Java-&-Spring-boot-RESTful-API",
@@ -191,5 +200,32 @@ export const technologies = [
     name: "Cloud Computing",
     description: "Leveraging cloud platforms for scalable applications",
     delay: 0.6
+  }
+];
+
+export const TESTIMONIALS = [
+  {
+    name: "Nimal Perera",
+    company: "Ceylon Tea Exports",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    text: "Working with Chamika was a pleasure. Our website is now modern, fast, and our customers love it!"
+  },
+  {
+    name: "Samanthi Jayasuriya",
+    company: "Lanka Travels",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    text: "The booking system Chamika built for us has streamlined our business and improved customer satisfaction."
+  },
+  {
+    name: "Ruwan Fernando",
+    company: "Colombo Tech Solutions",
+    image: "https://randomuser.me/api/portraits/men/65.jpg",
+    text: "Professional, reliable, and highly skilled. Highly recommended for any web project."
+  },
+  {
+    name: "Dilani Silva",
+    company: "Silva Fashions",
+    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    text: "Our online store sales increased by 40% after the new e-commerce site launch. Thank you!"
   }
 ];
